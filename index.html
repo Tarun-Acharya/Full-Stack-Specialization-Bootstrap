@@ -43,8 +43,12 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center rtb">
+                    <a href="#reserve" class="btn btn-warning btn-lg btn-block" role="button">Reserve Table</a>
+                       
                 </div>
             </div>
         </di v>
@@ -52,7 +56,7 @@
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3 ">
+            <div class="col-8 col-sm-4 order-sm-last col-md-3 ">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col col-sm col-md order-sm-first">
@@ -70,17 +74,23 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3 ">
+            <div class="col-8 col-sm-4 col-md-3 order-sm-first ">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col col-sm col-md order-sm-last">
+                <div class="media">
+                    <div class="media-body">
+                <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            </div>
+            <img class="d-flex mr-3 img-thumbnail aligh-self-center" src="img/buffet.png" alt="buffet">                   
+            
+            </div>
             </div>
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last ">
+            <div class="col-8 col-sm-4 col-md-3 order-sm-last ">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm col-md order-sm-first">
@@ -98,6 +108,73 @@
                     </div>
                 </div>
                 </div>
+        </div>
+        <div class="row row-content align-items-center" id="reserve">
+            <div class="col-10 col-sm-8 offset-sm-2 align-content-center">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="noofguests" class="col-md-2 col-form-label" style="font-size: 20px;"><strong>Number Of Guests</strong></label>
+                                <div class="col-md-10">                                  
+                        <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample1">
+                        <label class="custom-control-label" for="defaultInline1">1</label>
+                            </div>                                    
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                      <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample2">
+                          <label class="custom-control-label" for="defaultInline2">2</label>
+                                             </div>
+  
+                                <!-- Default inline 3-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample3">
+                                    <label class="custom-control-label" for="defaultInline3">3</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="defaultInline4" name="inlineDefaultRadiosExample4">
+                                    <label class="custom-control-label" for="defaultInline4">4</label>
+                                        </div>
+              
+                                                 
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                  <input type="radio" class="custom-control-input" id="defaultInline5" name="inlineDefaultRadiosExample5">
+                                      <label class="custom-control-label" for="defaultInline5">5</label>
+                                                         </div>
+              
+                                            <!-- Default inline 3-->
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="defaultInline6" name="inlineDefaultRadiosExample6">
+                                                <label class="custom-control-label" for="defaultInline6">6</label>
+                                            </div>
+
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="dateandtime" class="col-12 col-md-2 col-form-label" style="font-size: 20px;"><strong>Date and Time</strong></label>                               
+                                    
+                                    <div class="col-12 col-md-4">
+                                    <input  class="form-control" onfocus="(this.type='date')"  id="date" name="date" placeholder="Date">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <input id="time" class="form-control" onfocus="(this.type='time')"  name="time" placeholder="Time">
+                                    </div>  
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10">
+                                        <button type="submit" class="btn btn-primary">
+                                            Reserve
+                                        </button>
+                                    </div>
+                                </div>
+                        </form>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
         </div>
     </div>
 
